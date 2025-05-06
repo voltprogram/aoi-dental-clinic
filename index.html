@@ -358,30 +358,43 @@
         <ul class="contact-form">
             <li class="contact-list">
                 <p class="contact-item">名前<span class="required">必須</span></p>
-                <div class="contact-field">[text* name class:field-type1 placeholder "山田 太郎"]</div>
+                <div class="contact-field">
+                    <input type="text" name="name" class="field-type1" placeholder="山田 太郎" required>
+                </div>
             </li>
             <li class="contact-list">
                 <p class="contact-item">フリガナ<span class="required">必須</span></p>
-                <div class="contact-field">[text* furigana class:field-type1 placeholder "ヤマダ タロウ"]</div>
+                <div class="contact-field">
+                    <input type="text" name="furigana" class="field-type1" placeholder="ヤマダ タロウ" required>
+                </div>
             </li>
             <li class="contact-list">
                 <p class="contact-item">電話番号<span class="required">必須</span></p>
-                <div class="contact-field">[tel* tel class:field-type2 placeholder "08012345678"]</div>
+                <div class="contact-field">
+                    <input type="tel" name="tel" class="field-type2" placeholder="08012345678" required>
+                </div>
             </li>
             <li class="contact-list">
                 <p class="contact-item">メールアドレス<span class="required">必須</span></p>
-                <div class="contact-field">[email* mail class:field-type3 placeholder "xxxxxxx@aoidentalclinic.com"]</div>
+                <div class="contact-field">
+                    <input type="email" name="mail" class="field-type3" placeholder="xxxxxxx@aoidentalclinic.com" required>
+                </div>
             </li>
             <li class="contact-list">
                 <p class="contact-item">ご住所<span class="any">任意</span></p>
                 <div class="contact-field contact-address">
-                    <div class="fieldbox"><div>〒</div>[text address1 class:field-type4 placeholder "000-0000"]</div>
-                    [text address2 class:field-type3 placeholder "東京都渋谷区笹塚１丁目６"][text address3 class:field-type3 placeholder "番地以降を入力してください"]
+                    <div class="fieldbox"><div>〒</div>
+                    <input type="text" name="address1" class="field-type4" placeholder="000-0000">
+                    </div>
+                    <input type="text" name="address2" class="field-type3" placeholder="東京都渋谷区笹塚１丁目６">
+                    <input type="text" name="address3" class="field-type3" placeholder="番地以降を入力してください">
                 </div>
             </li>
             <li class="contact-list">
                 <p class="contact-item">お問い合わせ内容<span class="required">必須</span></p>
-                <div class="contact-field">[textarea* comment]</div>
+                <div class="contact-field">
+                    <textarea name="comment" class="field-type1" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                </div>
             </li>
         </ul>
         <div class="contact-txtbox">
@@ -391,8 +404,15 @@
         </div>
         <div class="contact-check">
             <p class="check-txt">「個⼈情報の取り扱いについて」をご確認の上、<br class="pc_only">「同意する」にチェックをしてから「送信する」ボタンを押してください</p>
-            <div class="checkbox">[checkbox* checkbox use_label_element "上記内容に同意する。"]</div>
-        <div class="submit">[submit class:btn1 "送信する"]</div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    上記内容に同意する。
+                </label>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn1">送信する</button>
+            </div>
         </div>
     </div>
 </section>
