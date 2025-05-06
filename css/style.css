@@ -1209,14 +1209,9 @@ about
 	align-items: center;
 	gap: 1.5rem;
 	cursor: pointer;
-}
-.wpcf7-list-item-label {
 	font-size: 1.8rem;
 	font-weight: bold;
 	line-height: 1;
-}
-.wpcf7-form-control span {
-	margin-left: 0;
 }
 .checkbox input {
 	width: 3.0rem;
@@ -1327,8 +1322,6 @@ about
 	}
 	.checkbox label {
 		gap: 1.0rem;
-	}
-	.wpcf7-list-item-label {
 		font-size: 1.6rem;
 		font-weight: 500;
 		line-height: 2;
