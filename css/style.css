@@ -58,7 +58,7 @@ layout
 .container {
     max-width: 1080px;
     margin: 0 auto;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 @media screen and (max-width: 680px) {
     .container {
@@ -789,7 +789,6 @@ about
 	background-color: #fff;
 	border-radius: 10px;
 	padding: 4.8rem 7.8rem;
-	box-sizing: border-box;
 }
 .feature-list:nth-of-type(2n) .feature-content {
 	left: unset;
