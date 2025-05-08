@@ -1327,6 +1327,9 @@ about
 	.checkbox input {
 		width: 2.8rem;
 	}
+	.thank-you-message {
+		padding-top: 3.0rem;
+	}
 }
 
 /*============================
