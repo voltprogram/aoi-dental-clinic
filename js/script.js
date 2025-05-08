@@ -49,7 +49,7 @@ form.addEventListener("submit", function (e) {
             // 成功時にメッセージ表示
             checkSection.innerHTML = `
             <div class="thank-you-message">
-                <p>送信が完了しました。お問い合わせいただきありがとうございます。</p>
+                <p>送信が完了しました。<br class="sp_only">お問い合わせいただきありがとうございます。</p>
             </div>
             `;
         } else {
