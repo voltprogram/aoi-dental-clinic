@@ -1330,6 +1330,9 @@ about
 	.thank-you-message {
 		padding-top: 3.0rem;
 	}
+	.thank-you-message p {
+	font-size: 1.6rem;
+	}
 }
 
 /*============================
