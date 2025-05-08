@@ -1218,6 +1218,13 @@ about
 	display: inline-block;
 	padding: 1.8rem 0 1.9rem;
 }
+.thank-you-message {
+	padding-top: 5.0rem;
+}
+.thank-you-message p {
+	font-size: 2.0rem;
+	font-weight: bold;
+}
 @media screen and (min-width: 681px) {
 	.tel-num {
 		pointer-events: none;
