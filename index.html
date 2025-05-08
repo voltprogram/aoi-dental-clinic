@@ -10,18 +10,18 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <!-- OGP -->
-    <meta property="og:url" content="https://www.voltprogram.github.io/aoi-dental-clinic/">
+    <meta property="og:url" content="https://www.vaultprogram.github.io/aoi-dental-clinic/">
     <meta property="og:title" content="あおい歯科医院 - 患者さまが安心できる歯の治療">
     <meta property="og:type" content="website">
     <meta property="og:description" content="当クリニックでは、患者さまの不安を和らげ、安心して治療を受けていただけるよう努めています。 痛みを最小限に抑える技術と、丁寧な説明により、患者さま一人ひとりのニーズに対応します。">
-    <meta property="og:image" content="https://www.voltprogram.github.io/aoi-dental-clinic/images/ogp.jpg">
+    <meta property="og:image" content="https://www.vaultprogram.github.io/aoi-dental-clinic/images/ogp.jpg">
     <!-- X(Twitter) OGP -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="aoi-dental-clinic">
-    <meta name="twitter:domain" content="voltprogram.github.io">
+    <meta name="twitter:domain" content="vaultprogram.github.io">
     <meta name="twitter:title" content="aoi-dental-clinic">
     <meta name="twitter:description" content="当クリニックでは、患者さまの不安を和らげ、安心して治療を受けていただけるよう努めています。 痛みを最小限に抑える技術と、丁寧な説明により、患者さま一人ひとりのニーズに対応します。">
-    <meta name="twitter:image" content="https://www.voltprogram.github.io/aoi-dental-clinic/images/ogp.jpg">
+    <meta name="twitter:image" content="https://www.vaultprogram.github.io/aoi-dental-clinic/images/ogp.jpg">
     <!-- ress.css -->
     <link rel="stylesheet" href="css/ress.css">
     <!-- Fonts -->
@@ -355,73 +355,75 @@
                 受付時間：09:30～13:00 / 14:30～19:00
             </p>
         </div>
-        <ul class="contact-form">
-            <li class="contact-list">
-                <p class="contact-item">名前<span class="required">必須</span></p>
-                <div class="contact-field">
-                    <input type="text" name="name" class="field-type1" placeholder="山田 太郎" required>
-                </div>
-            </li>
-            <li class="contact-list">
-                <p class="contact-item">フリガナ<span class="required">必須</span></p>
-                <div class="contact-field">
-                    <input type="text" name="furigana" class="field-type1" placeholder="ヤマダ タロウ" required>
-                </div>
-            </li>
-            <li class="contact-list">
-                <p class="contact-item">電話番号<span class="required">必須</span></p>
-                <div class="contact-field">
-                    <input type="tel" name="tel" class="field-type2" placeholder="08012345678" required>
-                </div>
-            </li>
-            <li class="contact-list">
-                <p class="contact-item">メールアドレス<span class="required">必須</span></p>
-                <div class="contact-field">
-                    <input type="email" name="mail" class="field-type3" placeholder="xxxxxxx@aoidentalclinic.com" required>
-                </div>
-            </li>
-            <li class="contact-list">
-                <p class="contact-item">ご住所<span class="any">任意</span></p>
-                <div class="contact-field contact-address">
-                    <div class="fieldbox"><div>〒</div>
-                    <input type="text" name="address1" class="field-type4" placeholder="000-0000">
+        <form id="contact-main" action="https://formspree.io/f/mwpobwlj" method="POST">
+            <ul class="contact-form">
+                <li class="contact-list">
+                    <p class="contact-item">名前<span class="required">必須</span></p>
+                    <div class="contact-field">
+                        <input type="text" name="name" class="field-type1" placeholder="山田 太郎" required>
                     </div>
-                    <input type="text" name="address2" class="field-type3" placeholder="東京都渋谷区笹塚１丁目６">
-                    <input type="text" name="address3" class="field-type3" placeholder="番地以降を入力してください">
-                </div>
-            </li>
-            <li class="contact-list">
-                <p class="contact-item">お問い合わせ内容<span class="required">必須</span></p>
-                <div class="contact-field">
-                    <textarea name="comment" class="field-type1" placeholder="お問い合わせ内容をご記入ください" required></textarea>
-                </div>
-            </li>
-        </ul>
-        <div class="contact-txtbox">
-            <h4 class="contact-maintxt">個⼈情報の取り扱いについて</h4>
-            <P class="contact-subtxt">当院では、当HP内から収得した個⼈情報を本サービスに関する⽬的以外⼀切利⽤いたしません。また、利⽤者本⼈の許可なく第三者に開⽰することは原則としてありません。</P>
-            <p class="contact-txt">※但し、裁判所、検察庁、警察またはこれらに準じた関連諸機関から書⾯による開⽰を求められた場合は、利⽤者本⼈の許可なく利⽤者本⼈からの提供情報および登録内容、申込内容、使⽤されたIPアドレス等のアクセス記録を当該第三者に開⽰することがあります。</p>
-        </div>
-        <div class="contact-check">
-            <p class="check-txt">「個⼈情報の取り扱いについて」をご確認の上、<br class="pc_only">「同意する」にチェックをしてから「送信する」ボタンを押してください</p>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="agree" required>
-                    上記内容に同意する。
-                </label>
+                </li>
+                <li class="contact-list">
+                    <p class="contact-item">フリガナ<span class="required">必須</span></p>
+                    <div class="contact-field">
+                        <input type="text" name="furigana" class="field-type1" placeholder="ヤマダ タロウ" required>
+                    </div>
+                </li>
+                <li class="contact-list">
+                    <p class="contact-item">電話番号<span class="required">必須</span></p>
+                    <div class="contact-field">
+                        <input type="tel" name="tel" class="field-type2" placeholder="08012345678" required>
+                    </div>
+                </li>
+                <li class="contact-list">
+                    <p class="contact-item">メールアドレス<span class="required">必須</span></p>
+                    <div class="contact-field">
+                        <input type="email" name="mail" class="field-type3" placeholder="xxxxxxx@aoidentalclinic.com" required>
+                    </div>
+                </li>
+                <li class="contact-list">
+                    <p class="contact-item">ご住所<span class="any">任意</span></p>
+                    <div class="contact-field contact-address">
+                        <div class="fieldbox"><div>〒</div>
+                        <input type="text" name="address1" class="field-type4" placeholder="000-0000">
+                        </div>
+                        <input type="text" name="address2" class="field-type3" placeholder="東京都渋谷区笹塚１丁目６">
+                        <input type="text" name="address3" class="field-type3" placeholder="番地以降を入力してください">
+                    </div>
+                </li>
+                <li class="contact-list">
+                    <p class="contact-item">お問い合わせ内容<span class="required">必須</span></p>
+                    <div class="contact-field">
+                        <textarea name="comment" class="field-type1" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                    </div>
+                </li>
+            </ul>
+            <div class="contact-txtbox">
+                <h4 class="contact-maintxt">個⼈情報の取り扱いについて</h4>
+                <P class="contact-subtxt">当院では、当HP内から収得した個⼈情報を本サービスに関する⽬的以外⼀切利⽤いたしません。また、利⽤者本⼈の許可なく第三者に開⽰することは原則としてありません。</P>
+                <p class="contact-txt">※但し、裁判所、検察庁、警察またはこれらに準じた関連諸機関から書⾯による開⽰を求められた場合は、利⽤者本⼈の許可なく利⽤者本⼈からの提供情報および登録内容、申込内容、使⽤されたIPアドレス等のアクセス記録を当該第三者に開⽰することがあります。</p>
             </div>
-            <div class="submit">
-                <button type="submit" class="btn1">送信する</button>
+            <div class="contact-check" id="contact-check">
+                <p class="check-txt">「個⼈情報の取り扱いについて」をご確認の上、<br class="pc_only">「同意する」にチェックをしてから「送信する」ボタンを押してください</p>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        上記内容に同意する。
+                    </label>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="btn1" id="send-button">送信する</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
-<!-- /access -->
+<!-- /contact -->
 
 <div class="footer-img">
     <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/files/images/footer-img_cp.jpg" alt="" loading="lazy" media="(min-width: 681px)">
-        <img src="<?php echo get_template_directory_uri(); ?>/files/images/sp/footer-img-sp.jpg" alt="" loading="lazy">
+        <source srcset="images/footer-img_cp.jpg" alt="パソコン用歯科医院風景" loading="lazy" media="(min-width: 681px)">
+        <img src="images/sp/footer-img-sp.jpg" alt="スマホ用歯科医院風景" loading="lazy">
     </picture>
 </div>
 
